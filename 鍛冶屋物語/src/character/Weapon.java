@@ -26,4 +26,9 @@ public class Weapon {
     public int getDurability() {
         return durability;
     }
+
+    public void use() {
+        durability -= 10;
+        if (durability < 0) durability = 0;
+    }
 }
